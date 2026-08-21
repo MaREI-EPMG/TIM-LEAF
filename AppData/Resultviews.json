@@ -1,695 +1,830 @@
 [
   {
     "Settings": {},
-    "Description": "Transport - CO2 Emissions",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"DMD_TRA-P-LAND\",\"DMD_TRA-F-LAND\",\"DMD_TRA-R-AVIDOM\",\"DMD_TRA-R-AVIINT\",\"DMD_TRA-F-LAND\",\"DMD_TRA-R-OTH\",\"DMD_TRA-R-NAV\",\"DMD_TRA-R-TURS\"],\"commodityset\":[\"ENV-CO2\"]}",
-    "Name": "TRA_Emissions-CO2",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "CO2 emissions by sector",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Comnet\"],\"commodityset\":[\"ENV-CO2_AGR\",\"ENV-CO2_SRV\",\"ENV-CO2_IND\",\"ENV-CO2_PWR\",\"ENV-CO2_RSD\",\"ENV-CO2_SUP\",\"ENV-CO2_TRA\"]}",
-    "Name": "SYS_Emissions_CO2",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Annual costs by type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"Reg_ACost\"]}",
-    "Name": "SYS_Cost_Type",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Annual costs by sector",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"Cost_Act\",\"Cost_Flo\",\"Cost_Fom\",\"Cost_Inv\"],\"processset\":[\"PRC_AGR\",\"PRC_IND\",\"PRC_PWR\",\"PRC_RSD\",\"PRC_SRV\",\"PRC_SUP\",\"PRC_TRA\"]}",
-    "Name": "SYS_Cost_Sector",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Power Sector CO2 Emissions",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"PWR-BIO\",\"PWR-BIO-CCS\",\"PWR-COA\",\"PWR-COA-CCS\",\"PWR-GAS\",\"PWR-GAS-CCS\",\"PWR-GEO\",\"PWR-H2\",\"PWR-HYD\",\"PWR-MSW\",\"PWR-OCE\",\"PWR-OIL\",\"PWR-PEA\",\"PWR-PEA-CCS\",\"PWR-SOL\",\"PWR-WIN-OF\",\"PWR-WIN-ON\"],\"commodityset\":[\"ENV-CO2\"]}",
-    "Name": "PWR_Emissions-CO2",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Marginal cost of CO2",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"EQ_CombalM\"],\"commodityset\":[\"ENV-CO2\"]}",
-    "Name": "SYS_CO2Price",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Residential CO2 emissions by energy service",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"RSD_BLD-XXX_NRGSRV-CD\",\"RSD_BLD-XXX_NRGSRV-CK\",\"RSD_BLD-XXX_NRGSRV-CW\",\"RSD_BLD-XXX_NRGSRV-DW\",\"RSD_BLD-XXX_NRGSRV-LT\",\"RSD_BLD-XXX_NRGSRV-OA\",\"RSD_BLD-XXX_NRGSRV-OE\",\"RSD_BLD-XXX_NRGSRV-PF\",\"RSD_BLD-XXX_NRGSRV-RF\",\"RSD_BLD-XXX_NRGSRV-WS\"],\"commodityset\":[\"ENV-CO2_RSD\"]}",
-    "Name": "RSD_Services_CO2Emissions",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "SysCost",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"ObjZ\"]}",
-    "Name": "SysCost",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Industry - CO2 Emissions",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"DMD_IND-CAF\",\"DMD_IND-EOE\",\"DMD_IND-FAB\",\"DMD_IND-MAE\",\"DMD_IND-MAP\",\"DMD_IND-NEM\",\"DMD_IND-OMA\",\"DMD_IND-ONM\",\"DMD_IND-PX4\",\"DMD_IND-RAP\",\"DMD_IND-TAP\",\"DMD_IND-TEM\",\"DMD_IND-WAP\",\"DMD_IND-CON\",\"DMD_IND-ELC\",\"DMD_IND-CEM\",\"DMD_IND-FAP\",\"DMD_IND-LIM\",\"DMD_IND-OIL\",\"TECHS_IND-WAP\",\"TECHS_IND-ONM\",\"TECHS_IND-OMA\",\"TECHS_IND-OIL\",\"TECHS_IND-LIM\",\"TECHS_IND-MAP\",\"TECHS_IND-FAP\",\"TECHS_IND-ELC\",\"TECHS_IND-CEM\",\"TECHS_IND-CAF\"],\"commodityset\":[\"ENV-CO2\"]}",
-    "Name": "IND_Emissions-CO2",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Lump sum investment costs by sector",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"Cap_New\"],\"processset\":[\"PRC_AGR\",\"PRC_IND\",\"PRC_PWR\",\"PRC_RSD\",\"PRC_SRV\",\"PRC_SUP\",\"PRC_TRA\"],\"userconstraint\":[\"LUMPINV\"]}",
-    "Name": "SYS_LumpInv_Sector",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Transport final energy consumption",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"FT_TRA\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "TRA_FEC",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Transport final energy consumption by mode",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"DMD_TRA-F-LAND\",\"DMD_TRA-P-LAND\",\"DMD_TRA-R-AVIDOM\",\"DMD_TRA-R-AVIINT\",\"DMD_TRA-R-NAV\",\"DMD_TRA-R-OTH\",\"DMD_TRA-R-TURS\"],\"commodityset\":[\"NGR-FUELS_TRA\"]}",
-    "Name": "TRA_FEC_Mode",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Transport Fuel Marginal Cost",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"EQ_CombalM\"],\"commodityset\":[\"NGR-FUELS_TRA\"]}",
-    "Name": "TRA_FuelPrice",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Passenger Transport - Land - Mode",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"DMD_TRA-P-ACTIVE\",\"DMD_TRA-P-BUS\",\"DMD_TRA-P-CAR\",\"DMD_TRA-P-HPT\",\"DMD_TRA-P-LPT\",\"DMD_TRA-P-MOT\",\"DMD_TRA-P-TAXI\"],\"commodityset\":[\"DEM_TRA\"]}",
-    "Name": "TRA_Passenger_Land_Mode",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Passenger Transport - Land - Distance",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"TRAPL\",\"TRAPM\",\"TRAPS\"],\"processset\":[\"DMD_TRA-P-LAND\"]}",
-    "Name": "TRA_Passenger_Land_Distance",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Passenger Transport - Private Car Stock by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Cap\"],\"processset\":[\"DMD_TRA-P-CAR-BEV\",\"DMD_TRA-P-CAR-FCV\",\"DMD_TRA-P-CAR-HEV\",\"DMD_TRA-P-CAR-ICE\",\"DMD_TRA-P-CAR-PHEV\"]}",
-    "Name": "TRA_P-CAR_TYPE",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Passenger Transport - New Private Car Stock by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"DMD_TRA-P-CAR-BEV\",\"DMD_TRA-P-CAR-FCV\",\"DMD_TRA-P-CAR-HEV\",\"DMD_TRA-P-CAR-ICE\",\"DMD_TRA-P-CAR-PHEV\"]}",
-    "Name": "TRA_P-CAR-N_TYPE",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Freight Transport - Land - Mode",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"DMD_TRA-F-HTRUCK\",\"DMD_TRA-F-LTRUCK\",\"DMD_TRA-F-MTRUCK\",\"DMD_TRA-F-TRAIN\"],\"commodityset\":[\"DEM_TRA\"]}",
-    "Name": "TRA_Freight_Land_Mode",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Transport final energy consumption by mode - detailed",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"DMD_TRA-F-HTRUCK\",\"DMD_TRA-F-LTRUCK\",\"DMD_TRA-F-MTRUCK\",\"DMD_TRA-P-CAR\",\"DMD_TRA-P-BUS\",\"DMD_TRA-F-TRAIN\",\"DMD_TRA-P-HPT\",\"DMD_TRA-P-LPT\",\"DMD_TRA-P-MOT\",\"DMD_TRA-P-TAXI\",\"DMD_TRA-R-AVIDOM\",\"DMD_TRA-R-AVIINT\",\"DMD_TRA-R-NAV\",\"DMD_TRA-R-OTH\",\"DMD_TRA-R-TURS\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "TRA_FEC_Mode_Detailed",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Freight Transport - Medium Goods Truck Stock by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Cap\"],\"processset\":[\"DMD_TRA-F-MTRUCK-BEV\",\"DMD_TRA-F-MTRUCK-FCV\",\"DMD_TRA-F-MTRUCK-HEV\",\"DMD_TRA-F-MTRUCK-ICE\"]}",
-    "Name": "TRA_F-MTRUCK_TYPE",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Freight Transport - New Medium Goods Truck Stock by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"DMD_TRA-F-MTRUCK-BEV\",\"DMD_TRA-F-MTRUCK-FCV\",\"DMD_TRA-F-MTRUCK-HEV\",\"DMD_TRA-F-MTRUCK-ICE\"]}",
-    "Name": "TRA_F-MTRUCK-N_TYPE",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Freight Transport - Light Goods Truck Stock by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Cap\"],\"processset\":[\"DMD_TRA-F-LTRUCK-BEV\",\"DMD_TRA-F-LTRUCK-FCV\",\"DMD_TRA-F-LTRUCK-HEV\",\"DMD_TRA-F-LTRUCK-ICE\",\"DMD_TRA-F-LTRUCK-PHEV\"]}",
-    "Name": "TRA_F-LTRUCK_TYPE",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Freight Transport - New Light Goods Truck Stock by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"DMD_TRA-F-LTRUCK-BEV\",\"DMD_TRA-F-LTRUCK-FCV\",\"DMD_TRA-F-LTRUCK-HEV\",\"DMD_TRA-F-LTRUCK-ICE\",\"DMD_TRA-F-LTRUCK-PHEV\"]}",
-    "Name": "TRA_F-LTRUCK-N_TYPE",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Freight Transport - Heavy Goods Truck Stock by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Cap\"],\"processset\":[\"DMD_TRA-F-HTRUCK-BEV\",\"DMD_TRA-F-HTRUCK-FCV\",\"DMD_TRA-F-HTRUCK-HEV\",\"DMD_TRA-F-HTRUCK-ICE\"]}",
-    "Name": "TRA_F-HTRUCK_TYPE",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Freight Transport - New Heavy Goods Truck Stock by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"DMD_TRA-F-HTRUCK-BEV\",\"DMD_TRA-F-HTRUCK-FCV\",\"DMD_TRA-F-HTRUCK-HEV\",\"DMD_TRA-F-HTRUCK-ICE\"]}",
-    "Name": "TRA_F-HTRUCK-N_TYPE",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Transport - Land - Passenger/Freight - Lump sum investment costs",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"Cap_New\"],\"processset\":[\"DMD_TRA-F-LAND\",\"DMD_TRA-P-LAND\"],\"userconstraint\":[\"LUMPINV\"]}",
-    "Name": "TRA-Land_LumpInv",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "New Residential Retrofit - Attached - Capacity",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"RSD_BLD-ATT_RTFT\"]}",
-    "Name": "RSD_RTFT-ATT_NCAP",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Agriculture final energy consumption",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"FT_AGR\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "AGR_FEC",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Agriculture Fuel Marginal Cost",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"EQ_CombalM\"],\"commodityset\":[\"NGR-FUELS_AGR\"]}",
-    "Name": "AGR_FuelPrice",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Agriculture - Production of primary biomass",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"AGR-BIO\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "AGR_NRG-BIO-PRIME",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Agriculture - Production of primary biomass",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"AGR-BIO\"],\"commodityset\":[\"SEAI_RENEWABLES\",\"SEAI_BIOENERGY\",\"SEAI_OTHER_RENEWABLES\"]}",
-    "Name": "AGR_NRG-BIO-PRIME_SEAI",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Check dummy imports",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"DUMMY_IMPORT\"]}",
-    "Name": "Check_Dummy",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Services - data centres excess heat",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"SRVHET-DC-LT\"],\"processset\":[\"DMD_SRV-CS_DC\"]}",
-    "Name": "SRV-DCs_EH",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Services - data centres excess heat supply to DH grid",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"HETC\"],\"processset\":[\"SRV_CS-DC-EH-HP\"]}",
-    "Name": "SRV-DCs_EH_DH-Grid",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Services final energy consumption",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"FT_SRV\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "SRV_FEC",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Services final energy consumption by service",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"SRV-CS_NRGSRV-WS\",\"SRV-PU_NRGSRV-WS\",\"SRV-CS_NRGSRV-CK\",\"SRV-PU_NRGSRV-CK\",\"SRV-CS_NRGSRV-LIG\",\"SRV-PU_NRGSRV-LIG\",\"SRV-CS_NRGSRV-OEL\",\"SRV-PU_NRGSRV-OEL\",\"SRV-CS_NRGSRV-REF\",\"SRV-PU_NRGSRV-REF\",\"DMD_SRV-CS_DC\",\"DMD_SRV-PU_PLIG\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "SRV_FEC_Service",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Services Fuel Marginal Cost",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"EQ_CombalM\"],\"commodityset\":[\"NGR-FUELS_SRV\"]}",
-    "Name": "SRV_FuelPrice",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Supply of bio-diesel (import and production)",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"BIODST1G\",\"BIODST2G\"]}",
-    "Name": "SUP_BIODST",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Supply of bio-ethanol (import and production)",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"BIOETH1G\",\"BIOETH2G\"]}",
-    "Name": "SUP_BIOETH",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Supply of biogas (import and production)",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"BIOGAS1G\",\"BIOGAS2G\"]}",
-    "Name": "SUP_BIOGAS",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "CH4 emissions by sector",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Comnet\"],\"commodityset\":[\"ENV-CH4_AGR\",\"ENV-CH4_SRV\",\"ENV-CH4_IND\",\"ENV-CH4_PWR\",\"ENV-CH4_RSD\",\"ENV-CH4_SUP\",\"ENV-CH4_TRA\"]}",
-    "Name": "SYS_Emissions_CH4",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "N2O emissions by sector",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Comnet\"],\"commodityset\":[\"ENV-N2O_AGR\",\"ENV-N2O_SRV\",\"ENV-N2O_IND\",\"ENV-N2O_PWR\",\"ENV-N2O_RSD\",\"ENV-N2O_SUP\",\"ENV-N2O_TRA\"]}",
-    "Name": "SYS_Emissions_N2O",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Final energy consumption by fuel",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"FT_AGR\",\"FT_SRV\",\"FT_IND\",\"FT_RSD\",\"FT_TRA\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "SYS_FEC_Fuel",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Final energy consumption by fuel - SEAI aggregation",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"FT_AGR\",\"FT_SRV\",\"FT_IND\",\"FT_RSD\",\"FT_TRA\"],\"commodityset\":[\"SEAI_COAL\",\"SEAI_ELECTRICITY\",\"SEAI_HEAT\",\"SEAI_NATGAS\",\"SEAI_OIL\",\"SEAI_PEAT\",\"SEAI_RENEWABLES\",\"SEAI_HYDROGEN\",\"SEAI_OTHER_RENEWABLES\",\"SEAI_BIOENERGY\"]}",
-    "Name": "SYS_FEC_Fuel_SEAI",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Final energy consumption by sector",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"FT_AGR\",\"FT_SRV\",\"FT_IND\",\"FT_RSD\",\"FT_TRA\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "SYS_FEC_Sector",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Export of energy commodities",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"IRE-EXP\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "SYS_NRG-Export",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Export of energy commodities - SEAI aggregation",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"IRE-EXP\"],\"commodityset\":[\"SEAI_COAL\",\"SEAI_ELECTRICITY\",\"SEAI_HEAT\",\"SEAI_NATGAS\",\"SEAI_OIL\",\"SEAI_PEAT\",\"SEAI_RENEWABLES\",\"SEAI_HYDROGEN\",\"SEAI_BIOENERGY\",\"SEAI_OTHER_RENEWABLES\"]}",
-    "Name": "SYS_NRG-Export_SEAI",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Import of energy commodities",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"IRE-IMP\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "SYS_NRG-Import",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Import of energy commodities - SEAI aggregation",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"IRE-IMP\"],\"commodityset\":[\"SEAI_COAL\",\"SEAI_ELECTRICITY\",\"SEAI_HEAT\",\"SEAI_NATGAS\",\"SEAI_OIL\",\"SEAI_PEAT\",\"SEAI_RENEWABLES\",\"SEAI_HYDROGEN\",\"SEAI_OTHER_RENEWABLES\",\"SEAI_BIOENERGY\"]}",
-    "Name": "SYS_NRG-Import_SEAI",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Mining of energy commodities",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"IRE-MIN\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "SYS_NRG-Mining",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Mining of energy commodities - SEAI aggregation",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"IRE-MIN\"],\"commodityset\":[\"SEAI_COAL\",\"SEAI_ELECTRICITY\",\"SEAI_HEAT\",\"SEAI_NATGAS\",\"SEAI_OIL\",\"SEAI_PEAT\",\"SEAI_RENEWABLES\",\"SEAI_HYDROGEN\",\"SEAI_OTHER_RENEWABLES\",\"SEAI_BIOENERGY\"]}",
-    "Name": "SYS_NRG-Mining_SEAI",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Industry Fuel Marginal Cost",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"EQ_CombalM\"],\"commodityset\":[\"NGR-FUELS_IND\"]}",
-    "Name": "IND_FuelPrice",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Industry final energy consumption",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"FT_IND\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "IND_FEC",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Industry final energy consumption by sector",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"DMD_IND-CAF\",\"DMD_IND-CEM\",\"DMD_IND-CON\",\"DMD_IND-ELC\",\"DMD_IND-EOE\",\"DMD_IND-FAB\",\"DMD_IND-FAP\",\"DMD_IND-LIM\",\"DMD_IND-MAE\",\"DMD_IND-MAP\",\"DMD_IND-NEM\",\"DMD_IND-OIL\",\"DMD_IND-OMA\",\"DMD_IND-ONM\",\"DMD_IND-PX4\",\"DMD_IND-RAP\",\"DMD_IND-TAP\",\"DMD_IND-TEM\",\"DMD_IND-WAP\",\"TECHS_IND-CAF\",\"TECHS_IND-CEM\",\"TECHS_IND-ELC\",\"TECHS_IND-FAP\",\"TECHS_IND-LIM\",\"TECHS_IND-MAP\",\"TECHS_IND-OIL\",\"TECHS_IND-OMA\",\"TECHS_IND-ONM\",\"TECHS_IND-WAP\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "IND_FEC_Sector",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "PWR Capacity",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Cap\"],\"processset\":[\"PWR-BIO\",\"PWR-COA\",\"PWR-GAS\",\"PWR-GAS-CCS\",\"PWR-H2\",\"PWR-HYD\",\"PWR-OCE\",\"PWR-OIL\",\"PWR-SOL\",\"PWR-WIN-OF\",\"PWR-WIN-ON\",\"PWR-BIO-CCS\",\"PWR-COA-CCS\",\"PWR-GEO\",\"PWR-MSW\",\"PWR-PEA\",\"PWR-PEA-CCS\"]}",
-    "Name": "PWR_Cap",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "PWR Capacity - New",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Ncap\"],\"processset\":[\"PWR-BIO\",\"PWR-COA\",\"PWR-GAS\",\"PWR-GAS-CCS\",\"PWR-H2\",\"PWR-HYD\",\"PWR-OCE\",\"PWR-OIL\",\"PWR-SOL\",\"PWR-WIN-OF\",\"PWR-WIN-ON\",\"PWR-BIO-CCS\",\"PWR-COA-CCS\",\"PWR-GEO\",\"PWR-MSW\",\"PWR-PEA\",\"PWR-PEA-CCS\"]}",
-    "Name": "PWR_Cap-N",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Power Sector Fuel Marginal Cost",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"EQ_CombalM\"],\"commodityset\":[\"NGR-FUELS_PWR\"]}",
-    "Name": "PWR_FuelPrice",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "PWR Generation - Electricity",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"ELCC\"],\"processset\":[\"PWR-BIO\",\"PWR-COA\",\"PWR-GAS\",\"PWR-GAS-CCS\",\"PWR-H2\",\"PWR-HYD\",\"PWR-OCE\",\"PWR-OIL\",\"PWR-SOL\",\"PWR-WIN-OF\",\"PWR-WIN-ON\",\"PWR-COA-CCS\",\"PWR-BIO-CCS\",\"PWR-GEO\",\"PWR-MSW\",\"PWR-PEA\",\"PWR-PEA-CCS\"]}",
-    "Name": "PWR_Gen-ELCC",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "PWR Generation - Heat",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"HETC\"],\"processset\":[\"PWR-BIO\",\"PWR-COA\",\"PWR-GAS\",\"PWR-GAS-CCS\",\"PWR-H2\",\"PWR-HYD\",\"PWR-OCE\",\"PWR-OIL\",\"PWR-SOL\",\"PWR-WIN-OF\",\"PWR-WIN-ON\",\"PWR-COA-CCS\",\"PWR-BIO-CCS\",\"PWR-GEO\",\"PWR-MSW\",\"PWR-PEA\",\"PWR-PEA-CCS\"]}",
-    "Name": "PWR_Gen-HETC",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "Supply of hydrogen (production)",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"SUPH2GC\",\"SUPH2GD\"],\"processset\":[\"SUP-H2-Electrolysis\"]}",
-    "Name": "SUP_HYDROGEN",
-    "UserName": "rbsul"
-  },
-  {
-    "Settings": {},
-    "Description": "CO2 emissions in DACS",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"process\":[\"SCO2DACS\"],\"attribute\":[\"VAR_FIn\"]}",
-    "Name": "SYS_DACS",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-25 14:34",
+    "LastAccessed": "2026-08-17 09:06",
+    "Filter": "{\"process\":[\"HWP_Carbon\",\"HWP_CO2_inflow\",\"HWP_CO2storage\"]}",
+    "Name": "HWP storage",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
     "Description": "",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Cap\"],\"processset\":[\"STR-BAT\",\"STR-H2\",\"STR-PH\"]}",
-    "Name": "Storages_CAP",
-    "UserName": "rbsul"
+    "EditedOn": "2026-06-25 12:50",
+    "LastAccessed": "2026-08-17 09:06",
+    "Filter": "{\"commodity\":[\"AGRCO2N\",\"INDCO2N\",\"INDCO2P\",\"RSDCO2\",\"SRVCO2N\",\"TRACO2N\"]}",
+    "Name": "Energy emissions (AGR, IND, RSD, SRV, TRA)",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "New Residential Space and Water Heating - Detached - Capacity",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"RSD_BLD-DET-OTH\",\"RSD_BLD-DET-HP\",\"RSD_BLD-DET-GAS\",\"RSD_BLD-DET-ELC\"]}",
-    "Name": "RSD_WS-DET_NCAP",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-25 12:59",
+    "LastAccessed": "2026-08-17 09:06",
+    "Filter": "{\"commodity\":[\"PWRCO2N\",\"PWRCO2S\"]}",
+    "Name": "PWRCO2 emissions",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "Residential detached hot water, space heating and cooling fuel consumption",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"RSD_BLD-DET_NRGSRV-WS\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "RSD_WS-DET_FuelCons",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-25 12:59",
+    "LastAccessed": "2026-08-17 09:06",
+    "Filter": "{\"commodity\":[\"AGRLIVCH4\",\"AGRLIVN2O\",\"AGRTILN2O\"]}",
+    "Name": "AGR emissions for LU",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "Residential energy consumption by energy service",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"RSD_BLD-XXX_NRGSRV-CD\",\"RSD_BLD-XXX_NRGSRV-CK\",\"RSD_BLD-XXX_NRGSRV-CW\",\"RSD_BLD-XXX_NRGSRV-DW\",\"RSD_BLD-XXX_NRGSRV-LT\",\"RSD_BLD-XXX_NRGSRV-OA\",\"RSD_BLD-XXX_NRGSRV-OE\",\"RSD_BLD-XXX_NRGSRV-PF\",\"RSD_BLD-XXX_NRGSRV-RF\",\"RSD_BLD-XXX_NRGSRV-WS\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "RSD_Services_EnergyCons",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-08-17 09:06",
+    "Filter": "{\"commodity\":[\"EMI-CDW-NET\",\"EMI-CLB-GAIN\",\"EMI-CLB-LOSS\",\"EMI-CLI-NET\",\"EMI-CRO-DRAIN-CH4\",\"EMI-CRO-DRAIN-CO2\",\"EMI-CRO-DRAIN-N2O\",\"EMI-CSO-NET\",\"EMI-FDW-NET\",\"EMI-FLB-GAIN\",\"EMI-FLB-LOSS\",\"EMI-FLI-NET\",\"EMI-FOR-DRAIN-CH4\",\"EMI-FOR-DRAIN-CO2\",\"EMI-FOR-DRAIN-N2O\",\"EMI-FOR-NET\",\"EMI-FSO-NET\",\"EMI-GDW-NET\",\"EMI-GLB-GAIN\",\"EMI-GLB-LOSS\",\"EMI-GLI-NET\",\"EMI-GRA-DRAIN-CH4\",\"EMI-GRA-DRAIN-CO2\",\"EMI-GRA-DRAIN-N2O\",\"EMI-GRA-N2Oa\",\"EMI-GRA-N2Ob\",\"EMI-GSO-NET\",\"EMI-WDW-NET\",\"EMI-WET-DRAIN-CH4\",\"EMI-WET-DRAIN-CO2\",\"EMI-WET-DRAIN-N2O\",\"EMI-WLB-GAIN\",\"EMI-WLB-LOSS\",\"EMI-WLI-NET\",\"EMI-WSO-NET\",\"EMI_HWP\",\"EMI_HWP_C\"]}",
+    "Name": "LULUCF emissions",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "New Residential Retrofit - Energy Saved by Dwelling Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"RSD_BLD-XXX_RTFT\"]}",
-    "Name": "RSD_RTFT_NRG_SAVINGS",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-08-12 13:12",
+    "LastAccessed": "2026-08-16 08:44",
+    "Filter": "{\"commodity\":[\"AGRLIVCH4\",\"AGRLIVN2O\",\"AGRTILN2O\",\"EMI-CRO-DRAIN-CH4\",\"EMI-CRO-DRAIN-N2O\",\"EMI-FOR-DRAIN-CH4\",\"EMI-FOR-DRAIN-N2O\",\"EMI-GRA-DRAIN-CH4\",\"EMI-GRA-DRAIN-N2O\",\"EMI-GRA-N2Oa\",\"EMI-GRA-N2Ob\",\"EMI-WET-DRAIN-CH4\",\"EMI-WET-DRAIN-N2O\"]}",
+    "Name": "SYSNONCO2",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "Residential final energy consumption",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"FT_RSD\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "RSD_FEC",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-08-14 15:34",
+    "LastAccessed": "2026-08-14 15:34",
+    "Filter": "{\"commodity\":[\"AGRCO2N\",\"EMI-CLB-GAIN\",\"EMI-CLB-LOSS\",\"EMI-CSO-NET\",\"EMI-FOR-DRAIN-CO2\",\"EMI-FOR-NET\",\"EMI-GDW-NET\",\"EMI-GLB-GAIN\",\"EMI-GLB-LOSS\",\"EMI-GSO-NET\",\"EMI-WET-DRAIN-CO2\",\"EMI-WLB-LOSS\",\"EMI-WSO-NET\",\"EMI_HWP_C\",\"INDCO2N\",\"INDCO2P\",\"PWRCO2N\",\"RSDCO2\",\"SRVCO2N\",\"SUPCO2N\",\"TRACO2N\"]}",
+    "Name": "SYSCO2 EMI",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "Residential Cooking Technologies by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Cap\"],\"processset\":[\"RSD_BLD-XXX_NRGSRV-CK\"]}",
-    "Name": "RSD_CK_TYPE",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-08-12 13:04",
+    "LastAccessed": "2026-08-14 15:17",
+    "Filter": "{\"commodity\":[\"AGRCO2N\",\"EMI-CLB-GAIN\",\"EMI-CLB-LOSS\",\"EMI-CSO-NET\",\"EMI-FOR-DRAIN-CO2\",\"EMI-FOR-NET\",\"EMI-GDW-NET\",\"EMI-GLB-GAIN\",\"EMI-GLB-LOSS\",\"EMI-GSO-NET\",\"EMI-WET-DRAIN-CO2\",\"EMI-WLB-LOSS\",\"EMI-WSO-NET\",\"EMI_HWP_C\",\"EMI_HWP_Sink\",\"INDCO2N\",\"INDCO2P\",\"PWRCO2N\",\"RSDCO2\",\"SRVCO2N\",\"SUPCO2N\",\"TRACO2N\"]}",
+    "Name": "SYSCO2",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "New Residential Buildings by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"DMD_RSD-BLD-APT\",\"DMD_RSD-BLD-ATT\",\"DMD_RSD-BLD-DET\"]}",
-    "Name": "RSD_BLD-N_TYPE",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-07-08 12:17",
+    "LastAccessed": "2026-07-08 12:21",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"LAND-NRG\"]}",
+    "Name": "Land_Energy",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "Residential Buildings by Type",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_Cap\"],\"processset\":[\"DMD_RSD-BLD-APT\",\"DMD_RSD-BLD-ATT\",\"DMD_RSD-BLD-DET\"]}",
-    "Name": "RSD_BLD_TYPE",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-29 13:38",
+    "LastAccessed": "2026-07-08 12:21",
+    "Filter": "{\"process\":[\"APASCAT100\",\"APASCAT200\",\"APASOTH100\",\"APASSHE100\"],\"attribute\":[\"VAR_FIn\"],\"commodity\":[\"GRALAND_use\"]}",
+    "Name": "Pasture Land area",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "New Residential Retrofit - Detached - Capacity",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"RSD_BLD-DET_RTFT\"]}",
-    "Name": "RSD_RTFT-DET_NCAP",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-29 13:37",
+    "LastAccessed": "2026-07-08 12:21",
+    "Filter": "{\"process\":[\"CRO_STOCK\",\"GRA_STOCK\"],\"attribute\":[\"VAR_FIn\"],\"commodity\":[\"CROLAND_use\",\"GRALAND_use\"]}",
+    "Name": "Other land area",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "New Residential Retrofit - Apartments - Capacity",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"RSD_BLD-APT_RTFT\"]}",
-    "Name": "RSD_RTFT-APT_NCAP",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-29 13:34",
+    "LastAccessed": "2026-07-08 12:21",
+    "Filter": "{\"process\":[\"ManagedForest_00\"],\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"FOR_Managed\"]}",
+    "Name": "Managed Forest Area",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "New Residential Space and Water Heating - Attached - Capacity",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"RSD_BLD-ATT-OTH\",\"RSD_BLD-ATT-HP\",\"RSD_BLD-ATT-GAS\",\"RSD_BLD-ATT-ELC\"]}",
-    "Name": "RSD_WS-ATT_NCAP",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-29 13:35",
+    "LastAccessed": "2026-07-08 12:21",
+    "Filter": "{\"process\":[\"WETLAND_Mgt\"],\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"WTLND_Managed\"]}",
+    "Name": "Managed wetland area",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "New Residential Space and Water Heating - Apartments - Capacity",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_NCap\"],\"processset\":[\"RSD_BLD-APT-ELC\",\"RSD_BLD-APT-GAS\",\"RSD_BLD-APT-HP\",\"RSD_BLD-APT-OTH\"]}",
-    "Name": "RSD_WS-APT_NCAP",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-07-08 12:20",
+    "LastAccessed": "2026-07-08 12:21",
+    "Filter": "{\"process\":[\"ATILBAR100\",\"ATILOAT100\",\"ATILOSR100\",\"ATILPOT100\",\"ATILPUL100\",\"ATILWHE100\"],\"attribute\":[\"VAR_FIn\"],\"commodity\":[\"CROLAND_use\"]}",
+    "Name": "Tillage area",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "Residential attached hot water, space heating and cooling fuel consumption",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"RSD_BLD-ATT_NRGSRV-WS\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "RSD_WS-ATT_FuelCons",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-16 08:22",
+    "LastAccessed": "2026-07-08 10:27",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"IRE-MIN\"],\"commodityset\":[\"SEAI_BIOENERGY\",\"SEAI_COAL\",\"SEAI_ELECTRICITY\",\"SEAI_HEAT\",\"SEAI_HYDROGEN\",\"SEAI_NATGAS\",\"SEAI_OIL\",\"SEAI_OTHER_RENEWABLES\",\"SEAI_PEAT\"]}",
+    "Name": "SYS_NRG-Mining_SEAI",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "Residential apartments hot water, space heating and cooling fuel consumption",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"RSD_BLD-APT_NRGSRV-WS\"],\"commodityset\":[\"NRG\"]}",
-    "Name": "RSD_WS-APT_FuelCons",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-16 08:18",
+    "LastAccessed": "2026-07-08 10:27",
+    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"IRE-EXP\"],\"commodityset\":[\"SEAI_BIOENERGY\",\"SEAI_COAL\",\"SEAI_ELECTRICITY\",\"SEAI_HEAT\",\"SEAI_HYDROGEN\",\"SEAI_NATGAS\",\"SEAI_OIL\",\"SEAI_OTHER_RENEWABLES\",\"SEAI_PEAT\"]}",
+    "Name": "SYS_NRG-Export_SEAI",
+    "UserName": "ext04266"
   },
   {
     "Settings": {},
-    "Description": "Residential Fuel Marginal Cost",
-    "EditedOn": "2025-11-26 12:23",
-    "LastAccessed": "2026-03-03 10:48",
-    "Filter": "{\"attribute\":[\"EQ_CombalM\"],\"commodityset\":[\"NGR-FUELS_RSD\"]}",
-    "Name": "RSD_FuelPrice",
-    "UserName": "rbsul"
+    "Description": "",
+    "EditedOn": "2026-06-16 08:19",
+    "LastAccessed": "2026-07-08 10:27",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"IRE-IMP\"],\"commodityset\":[\"SEAI_BIOENERGY\",\"SEAI_COAL\",\"SEAI_ELECTRICITY\",\"SEAI_HEAT\",\"SEAI_HYDROGEN\",\"SEAI_NATGAS\",\"SEAI_OIL\",\"SEAI_OTHER_RENEWABLES\",\"SEAI_PEAT\"]}",
+    "Name": "SYS_NRG_Import_SEAI",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Agriculture and forest - production of primary biomass",
+    "EditedOn": "2026-06-16 09:21",
+    "LastAccessed": "2026-07-08 10:27",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"BIOGRA\",\"BIOOSR\",\"BIOWHE\",\"BIOWOO\",\"BIOWOO1\",\"BIOWOO2\",\"BIOWOO3\",\"BIOWPE\"],\"commodityset\":[\"SEAI_BIOENERGY\",\"SEAI_OTHER_RENEWABLES\"]}",
+    "Name": "AGR_FOR_NRG-BIO_PRIME_SEAI",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-29 13:40",
+    "LastAccessed": "2026-07-07 12:59",
+    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"commodity\":[\"CRO_ENERGY\",\"GRA_ENERGY\"]}",
+    "Name": "Energy crops land area",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Prices_All",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-07-01 15:31",
+    "Filter": "{\"attribute\":[\"EQ_CombalM\"],\"commodityset\":[\"ENV\"]}",
+    "Name": "Prices_CO2",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-29 13:40",
+    "LastAccessed": "2026-06-29 13:40",
+    "Filter": "{\"process\":[\"ATILBAR100\",\"ATILOAT100\",\"ATILOSR100\",\"ATILPOT100\",\"ATILPUL100\",\"ATILWHE100\"],\"attribute\":[\"VAR_FIn\"],\"commodity\":[\"CROLAND_use\"]}",
+    "Name": "Tillage land area",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-29 10:37",
+    "LastAccessed": "2026-06-29 10:37",
+    "Filter": "{\"process\":[\"APASCAT100\",\"APASCAT200\",\"APASOTH100\",\"APASSHE100\",\"GRA_STOCK\",\"GRALAND_00\",\"GRALAND_ENERGY\",\"GRALAND_Mgt\"],\"attribute\":[\"VAR_Act\"]}",
+    "Name": "Grassland use",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "GHG emissions from AGR and CO2 emissions from other sectors. (CH4 and N2O emissions from AGR have to be converted to CO2eq. Values in Kilotonnes",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-25 12:45",
+    "Filter": "{\"commodity\":[\"AGRCO2N\",\"AGRLIVCH4\",\"AGRLIVNO2\",\"AGRTILNO2\",\"INDCO2N\",\"INDCO2P\",\"PWRCO2N\",\"RSDCO2\",\"SRVCO2N\",\"SUPCO2N\",\"SUPCO2P\",\"TRACO2N\"]}",
+    "Name": "Domestic GHG emissions by sector",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-09 16:14",
+    "Filter": "{\"commodity\":[\"IRL_Land\",\"CROLAND_use\",\"CROLAND\",\"CRO_ENERGY\",\"GRALAND_use\",\"GRALAND\",\"GRA_ENERGY\",\"FOR_Managed\",\"FORLAND\",\"WTLND_Managed\",\"WTPTLAND\"]}",
+    "Name": "Test_uc_land",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodityset\":[\"ENV-CO2_AGR\",\"ENV-CO2_IND\",\"ENV-CO2_PWR\",\"ENV-CO2_RSD\",\"ENV-CO2_SRV\",\"ENV-CO2_SUP\",\"ENV-CO2_TRA\"]}",
+    "Name": "Domestic_CO2",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"IMPDEMZ\",\"IMPDUCZ\",\"IMPMATZ\",\"IMPNRGZ\"]}",
+    "Name": "DUMMY_CHECK",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"processset\":[\"LAND-NRG\"]}",
+    "Name": "Land use by energy crops",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"EMI-CLB-GAIN\",\"EMI-FLB-GAIN\",\"EMI-GLB-GAIN\",\"EMI-WLB-GAIN\",\"HWP_Cstored\",\"INDCO2S\",\"PWRCO2S\",\"SUPCO2S\"]}",
+    "Name": "SEQ_EMISSIONS",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"SCO2DACS\"]}",
+    "Name": "UNABATED_EMISSIONS",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"AFORRWOOD_PROC\",\"FOR_Felled\",\"FOR_Thin\",\"HWP_Carbon\",\"HWP_CO2_inflow\",\"HWP_CO2storage\",\"ManagedForest_00\",\"WOODPRO_PROC\"]}",
+    "Name": "FOREST_RWOOD_HWP",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"CRO_ENERGY\",\"CROLAND\",\"CROLAND_use\",\"FOR_Managed\",\"FOREST_00\",\"FORLAND\",\"GRA_ENERGY\",\"GRALAND\",\"GRALAND_use\",\"GRASS_00\",\"WTPTLAND\",\"WTPTLAND_00\"]}",
+    "Name": "LULUCF flows",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"ACATMAN\",\"AGRBGS\",\"AGRDST\",\"AGRELC\",\"AGRHET\",\"AOTHMAN\",\"APIGMAN\",\"APOUMAN\",\"ASHEMAN\"]}",
+    "Name": "MANURE_TO_AGRBGS",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"AGRCO2N\",\"AGRLIVCH4\",\"AGRLIVNO2\",\"AGRTILNO2\",\"TOTAGRCO2e\",\"TOTCO2\"]}",
+    "Name": "CO2 Emissions_AGR_TOTAL",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodityset\":[\"DEM_AGR\"]}",
+    "Name": "AGR_DEM",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"AFORRWOOD_PROC\",\"AFORSEXP\",\"FOR_Felled\",\"FOR_Thin\",\"Forest_Stock_Nat\",\"Forest_Stock_Plan\",\"FORLANDPOT\",\"FORStock\",\"WOODPRO_PROC\",\"OA_stock\"]}",
+    "Name": "ALL FOR PROCESSES",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"AFORNATREG\",\"AFORPLAN\",\"AFORRWOOD_NAT\",\"AFORRWOOD_PLN\",\"AFORRWOOD_PROC\",\"FORLAND_Mgt\",\"FORLANDPOT\",\"FORNOHARVEST\",\"FORStock\",\"HWP_Carbon\",\"HWPCO2_Store\",\"PCRW_TECH\",\"WOODPRO_PROC\"]}",
+    "Name": "All forest outputs - material",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"AFORNATREG\",\"AFORPLAN\",\"AFORRWOOD_NAT\",\"AFORRWOOD_PLN\",\"AFORRWOOD_PROC\"]}",
+    "Name": "Forest Outputs",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"AGRFORCH4\",\"AGRFORCO2\",\"AGRFORNO2\",\"AGRLIVCH4\",\"AGRLIVNO2\",\"AGRLUCH4\",\"AGRLUCO2\",\"AGRLUNO2\",\"AGRTILNO2\",\"FORSINKCO2\",\"SINKCO2\"]}",
+    "Name": "AGR and LU emissions",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"period\":[\"2018\",\"2020\",\"2025\",\"2030\",\"2035\",\"2040\",\"2045\",\"2050\",\"2055\",\"2060\",\"2065\",\"2070\"],\"process\":[\"ALIVCAT100\",\"ALIVCAT200\",\"ALIVOTH100\",\"ALIVPIG100\",\"ALIVPOU100\",\"ALIVSHE100\",\"ANGRTIL100\",\"APASCAT100\",\"APASCAT100_Clover\",\"APASCAT200\",\"APASOTH100\",\"APASSHE100\",\"ATILBAR100\",\"ATILOAT100\",\"ATILPOT100\",\"ATILPUL100\",\"ATILWHE100\"],\"scenario\":[\"reference\"],\"commodity\":[\"AGRLIVCH4\",\"AGRLIVNO2\",\"AGRTILNO2\"]}",
+    "Name": "GHG emissions kton - Reference",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"period\":[\"2018\",\"2020\",\"2025\",\"2030\",\"2035\",\"2040\",\"2045\",\"2050\",\"2055\",\"2060\",\"2065\",\"2070\"],\"process\":[\"ALIVCAT100\",\"ALIVCAT200\",\"ALIVOTH100\",\"ALIVPIG100\",\"ALIVPOU100\",\"ALIVSHE100\",\"ANGRTIL100\",\"APASCAT100\",\"APASCAT100_Clover\",\"APASCAT200\",\"APASOTH100\",\"APASSHE100\",\"ATILBAR100\",\"ATILOAT100\",\"ATILPOT100\",\"ATILPUL100\",\"ATILWHE100\"],\"scenario\":[\"reference\"],\"commodity\":[\"AGRLIVCH4\",\"AGRLIVNO2\",\"AGRTILNO2\"]}",
+    "Name": "GHG emissions kton",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"period\":[\"2018\",\"2020\",\"2025\",\"2030\",\"2035\",\"2040\",\"2045\",\"2050\",\"2055\",\"2060\",\"2065\",\"2070\",\"2200\"],\"attribute\":[\"VAR_FIn\"],\"processset\":[\"PRC_AGR\"]}",
+    "Name": "Input consumption by agri processes",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"period\":[\"2018\",\"2020\",\"2025\",\"2030\",\"2035\",\"2040\",\"2045\",\"2050\",\"2055\",\"2060\",\"2065\",\"2070\",\"2200\"],\"attribute\":[\"VAR_FIn\"],\"processset\":[\"PRC_AGR\"]}",
+    "Name": "Input comsumption by agri processes",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"period\":[\"2018\",\"2020\",\"2025\",\"2030\",\"2040\",\"2050\"],\"processset\":[\"PRC_AGR\"],\"commodityset\":[\"ENV\",\"ENV-CH4_AGR\",\"ENV-CO2_AGR\",\"ENV-N2O_AGR\"]}",
+    "Name": "ENTERIC FERMENTATION CH4 EMISSIONS",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Objective Function Value",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"Reg_obj\"]}",
+    "Name": "_SysCost",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "All system costs (activity, flow, investments and salvage)",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"Cost_Act\",\"Cost_Comx\",\"Cost_Els\",\"Cost_Flo\",\"Cost_Flox\",\"Cost_Fom\",\"Cost_Inv\",\"Cost_ire\",\"Cost_Salv\"]}",
+    "Name": "All costs",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Annual Technology Costs",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"Cost_Fom\",\"Cost_Inv\",\"Cost_ire\"]}",
+    "Name": "Annual Technology Costs",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Consumption by Sector",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"FUEL_AGR\",\"FUEL_COM\",\"FUEL_IND\",\"FUEL_RSD\",\"FUEL_TRA\"]}",
+    "Name": "Consumption by Sector",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Check Dummy Imports",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"scenario\":[\"basescenario_timleaf\"],\"attribute\":[\"VAR_FOut\"]}",
+    "Name": "Check Dummy Imports",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Consumption by Sector and fuel",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"FUEL_AGR\",\"FUEL_COM\",\"FUEL_IND\",\"FUEL_RSD\",\"FUEL_TRA\"],\"commodityset\":[\"NRG_ELC\",\"NRG_GAS\",\"NRG_MISS\",\"NRG_NUK\",\"NRG_PP\",\"NRG_RNW\",\"NRG_SOLID\"]}",
+    "Name": "Consumption by Sector and fuel",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Demands",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodityset\":[\"DEM\"]}",
+    "Name": "Demands",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "ELC Fuel Consumption by Plant Type",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"processset\":[\"ELEBIO\",\"ELECOA\",\"ELEGAS\",\"ELEHYD\",\"ELENUC\",\"ELEOIL\",\"ELERNW\",\"ELESOL\",\"ELEWIN\"]}",
+    "Name": "ELC Fuel Consumption by Plant Type",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "ELC plants capacity and new capacity",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_Cap\"],\"processset\":[\"ELECOA\",\"ELEGAS\",\"ELEHYD\",\"ELENUC\",\"ELEOIL\",\"ELERNW\",\"ELESOL\",\"ELEWIN\"]}",
+    "Name": "ELC Plants Capacity",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "ELC plants new installed capacity in each period",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_Ncap\"],\"processset\":[\"ELEBIO\",\"ELECOA\",\"ELEGAS\",\"ELEHYD\",\"ELENUC\",\"ELEOIL\",\"ELERNW\",\"ELESOL\",\"ELEWIN\"]}",
+    "Name": "ELC Plants New Capacity",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "ELC Plants Production",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_Act\"],\"processset\":[\"ELEBIO\",\"ELECOA\",\"ELEGAS\",\"ELEHYD\",\"ELENUC\",\"ELEOIL\",\"ELERNW\",\"ELESOL\",\"ELEWIN\"]}",
+    "Name": "ELC Plants Production",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Emissions by Sector",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"AGRCO2\",\"COMCO2\",\"ELCCO2\",\"INDCO2\",\"RSDCO2\",\"TRACO2\"],\"commodityset\":[\"ENV\"]}",
+    "Name": "Emissions by Sector",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Electric Generation by Fuel Group",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"PP_FOSSIL\",\"PP_NUCLEAR\",\"PP_OTHER\",\"PP_RENEW\"],\"commodityset\":[\"NRG\"]}",
+    "Name": "ELC Production by Fuel Group",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "`Peak Equation",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"EQ_Peak\",\"EQ_PeakM\"]}",
+    "Name": "EQ_Peak",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Fuel Supply",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"processset\":[\"IRE\"]}",
+    "Name": "Fuel Supply",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Prices_All",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"EQ_CombalM\"]}",
+    "Name": "Prices_All",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Energy Prices",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"EQ_CombalM\"],\"commodityset\":[\"NRG\"]}",
+    "Name": "Prices_Energy",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Process Margina",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_ActM\",\"VAR_CapM\",\"VAR_NcapM\"]}",
+    "Name": "Process Marginals",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Supp",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FIn\",\"VAR_FOut\"],\"processset\":[\"EXP\",\"IMP\",\"MIN\",\"TRD_ENDO\"]}",
+    "Name": "Process_Trade",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Refinery input and output",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"REFEOIL00\"],\"attribute\":[\"VAR_FIn\",\"VAR_FOut\"]}",
+    "Name": "Refinery",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Total CO2 emissions (available only from Step 012)",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"TOTCO2\"],\"commodityset\":[\"ENV\"]}",
+    "Name": "Total CO2 Emissions",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Endogenous gas trade",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"TU_GAS_REG2_REG1_01\"],\"attribute\":[\"VAR_FIn\",\"VAR_FOut\"]}",
+    "Name": "Trade_Endogenous-GAS",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Electricity endogenous trade",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"TB_ELC_REG1_REG2_01\"],\"attribute\":[\"VAR_FIn\",\"VAR_FOut\"]}",
+    "Name": "Trade_Endogenous-ELC",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "information related to user constraints",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"User_conFXM\",\"User_con\"]}",
+    "Name": "UC_info",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{}",
+    "Name": "test save",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"ABIOCRP11\",\"ABIOCRP12\",\"ABIOCRP13\",\"ABIOCRP21\",\"ABIOCRP22\",\"ABIOCRP23\",\"ABIOCRP31\",\"ABIOCRP32\",\"ABIOCRP33\",\"ABIOCRP41\",\"ABIOCRP42\",\"ABIOCRP43\",\"ATILBAR100\",\"ATILOAT100\",\"ATILOSR100\",\"ATILPOT100\",\"ATILPUL100\",\"ATILWHE100\",\"CROLAND_Mgt\",\"CROPLANDPOT\",\"CRPLANDNOHARVEST\",\"CRPLANDSTOCK\"]}",
+    "Name": "All cropland output",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"AGRCRPCH4\",\"AGRCRPCO2\",\"AGRCRPNO2\",\"AGRFORCH4\",\"AGRFORCO2\",\"AGRFORCO2EQ\",\"AGRFORNO2\",\"AGRGRSCH4\",\"AGRGRSCO2\",\"AGRGRSNO2\",\"CROLAND\",\"CROLAND_use\",\"CRPLAND_Noharvest\",\"CRPLAND_Stock\",\"CRPSINKCO2\",\"FORLAND_use\",\"FORLANDSEQ\",\"FORSINKCO2\",\"FRSStock\",\"GRALAND\",\"GRALAND_use\"]}",
+    "Name": "All land use and LU emissions",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"ABIOCRP11\",\"ABIOCRP12\",\"ABIOCRP13\",\"ABIOCRP21\",\"ABIOCRP22\",\"ABIOCRP23\",\"ABIOCRP31\",\"ABIOCRP32\",\"ABIOCRP33\",\"ABIOCRP41\",\"ABIOCRP42\",\"ABIOCRP43\",\"ATILBAR100\",\"ATILOAT100\",\"ATILOSR100\",\"ATILPOT100\",\"ATILPUL100\",\"ATILWHE100\",\"CRO_STOCK\",\"CROLAND_Mgt\",\"CROPLAND_ENERGY\",\"CROPLANDPOT\"],\"scenario\":[\"basescenario_timleaf\"]}",
+    "Name": "Tillage output",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"ALIVCAT100\",\"ALIVCAT101\",\"ALIVCAT102\",\"ALIVCAT200\",\"ALIVCAT201\",\"ALIVCAT202\",\"ALIVOTH100\",\"ALIVOTH101\",\"ALIVOTH102\",\"ALIVPIG100\",\"ALIVPIG101\",\"ALIVPIG102\",\"ALIVPOU100\",\"ALIVPOU102\",\"ALIVSHE100\",\"ALIVSHE101\",\"ALIVSHE102\",\"APASCAT100\",\"APASCAT200\",\"APASOTH100\",\"APASSHE100\",\"FOR_TO_GRA\",\"GRA_STOCK\",\"GRA_TO_FOR\",\"GRALAND_00\",\"GRALAND_ENERGY\",\"GRALAND_Mgt\",\"GRALANDPOT\"],\"scenario\":[\"basescenario_timleaf\"]}",
+    "Name": "Grassland outputs",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"AGRLIVCH4\",\"AGRLIVNO2\",\"AGRTILNO2\",\"TOTAGRCO2e\"]}",
+    "Name": "AGR production - Non CO2 emissions",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"EMI-CRO-DRAIN-CH4\",\"EMI-CRO-DRAIN-CO2\",\"EMI-CRO-DRAIN-N20\",\"EMI-FOR-DRAIN-CH4\",\"EMI-FOR-DRAIN-CO2\",\"EMI-FOR-DRAIN-N20\",\"EMI-GRA-DRAIN-CH4\",\"EMI-GRA-DRAIN-CO2\",\"EMI-GRA-DRAIN-N20\",\"EMI-GRA-N20a\",\"EMI-GRA-N20b\",\"EMI-WET-DRAIN-CH4\",\"EMI-WET-DRAIN-CO2\",\"EMI-WET-DRAIN-N20\"]}",
+    "Name": "Other LULUCF emissions",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"scenario\":[\"250mt_s1\"],\"commodity\":[\"AGRLIVCH4\",\"AGRLIVNO2\",\"AGRTILNO2\",\"INDCO2N\",\"INDCO2P\",\"PWRCO2N\",\"RSDCO2\",\"SRVCO2N\",\"SUPCO2N\",\"SUPCO2P\",\"SUPCO2S\",\"TOTAGRCO2e\",\"TRACO2N\"]}",
+    "Name": "System wide emissions",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Dummy technologies",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"IMPDEMZ\",\"IMPMATZ\",\"IMPNRGZ\"]}",
+    "Name": "Unsaved_122315",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"scenario\":[\"250mt_s1\",\"250mt_s2\",\"250mt_s34\",\"basescenario_timleaf\"],\"commodity\":[\"AGRCO2N\",\"INDCO2N\",\"INDCO2P\",\"PWRCO2N\",\"RSDCO2\",\"SRVCO2N\",\"TRACO2N\"]}",
+    "Name": "Domestic energy CO2 emissions by sector kt",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"EMI-CDW-NET\",\"EMI-CLB-GAIN\",\"EMI-CLB-LOSS\",\"EMI-CLI-NET\",\"EMI-CRO-DRAIN-CH4\",\"EMI-CRO-DRAIN-CO2\",\"EMI-CRO-DRAIN-N20\",\"EMI-CSO-NET\",\"EMI-FDW-NET\",\"EMI-FLB-GAIN\",\"EMI-FLB-LOSS\",\"EMI-FLI-BET\",\"EMI-FOR-DRAIN-CH4\",\"EMI-FOR-DRAIN-CO2\",\"EMI-FOR-DRAIN-N20\",\"EMI-FSO-NET\",\"EMI-GDW-NET\",\"EMI-GLB-GAIN\",\"EMI-GLB-LOSS\",\"EMI-GLI-NET\",\"EMI-GRA-DRAIN-CH4\",\"EMI-GRA-DRAIN-CO2\",\"EMI-GRA-DRAIN-N20\",\"EMI-GRA-N20a\",\"EMI-GRA-N20b\",\"EMI-GSO-NET\",\"EMI-WDW-NET\",\"EMI-WET-DRAIN-CH4\",\"EMI-WET-DRAIN-CO2\",\"EMI-WET-DRAIN-N20\",\"EMI-WLB-GAIN\",\"EMI-WLB-LOSS\",\"EMI-WLI-NET\",\"EMI-WSO-NET\"]}",
+    "Name": "Carbon stcok changes",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"FOREST_00\",\"FOR_Managed\",\"FORLAND\",\"GRA_ENERGY\",\"GRALAND\",\"GRALAND_use\",\"GRASS_00\",\"CROLAND\",\"CRO_ENERGY\",\"CROLAND_use\",\"WTPTLAND\",\"WTPTLAND_00\"]}",
+    "Name": "All Land use",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"HWP_Carbon\",\"HWP_CO2_inflow\",\"HWP_CO2storage\"]}",
+    "Name": "HWP dynamics",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodityset\":[\"SEAI_BIOENERGY\"]}",
+    "Name": "bioenergy use",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "Total land summing crop land, forest land, grassland and wet land",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodity\":[\"CROLAND_use\",\"FOR_Managed\",\"GRALAND_use\",\"WTPTLAND\"]}",
+    "Name": "Total land area",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"FT-AGRBDL\",\"FT-AGRBGS\",\"FT-AGRBIO\",\"FT-INDBGS\",\"FT-INDBIO\",\"FT-INDWOO\",\"FT-PWRBGS\",\"FT-PWRBIO\",\"FT-RSDBDL\",\"FT-RSDBGS\",\"FT-RSDETH\",\"FT-RSDWOO\",\"FT-SRVBDL\",\"FT-SRVBGS\",\"FT-SRVBIO\",\"FT-SRVETH\",\"FT-SUPBIO\",\"FT-TRAETH\"],\"scenario\":[\"reference_annual\",\"s1_450mt_annual\",\"s2_450mt_annual\",\"s3_450_annual\"],\"attribute\":[\"VAR_Act\"]}",
+    "Name": "Total domestic biomass consumption by sector (PJ)",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"FT-AGRBDL\",\"FT-AGRBGS\",\"FT-AGRBIO\",\"FT-AGRDST\",\"FT-AGRELC\",\"FT-AGRGAS\",\"FT-AGRGEO\",\"FT-AGRH2G\",\"FT-AGRH2L\",\"FT-AGRHET\",\"FT-AGRLPG\",\"FT-AGRSOL\",\"FT-INDBGS\",\"FT-INDBIO\",\"FT-INDCOA\",\"FT-INDCOK\",\"FT-INDELC\",\"FT-INDGAS\",\"FT-INDH2G\",\"FT-INDH2L\",\"FT-INDNWS\",\"FT-INDOIL\",\"FT-INDRWS\",\"FT-INDWOO\",\"FT-PWRBGS\",\"FT-PWRBIO\",\"FT-PWRCOA\",\"FT-PWRDIS\",\"FT-PWRGAS\",\"FT-PWRGEO\",\"FT-PWRH2G\",\"FT-PWRH2L\",\"FT-PWRHFO\",\"FT-PWRHYD\",\"FT-PWRMSW\",\"FT-PWROCE\",\"FT-PWRPEA\",\"FT-PWRSOL\",\"FT-PWRWIN\",\"FT-RSDAHT\",\"FT-RSDBDL\",\"FT-RSDBGS\",\"FT-RSDCOA\",\"FT-RSDELC\",\"FT-RSDETH\",\"FT-RSDGAS\",\"FT-RSDHET\",\"FT-RSDKER\",\"FT-RSDLPG\",\"FT-RSDPEA\",\"FT-RSDSOL\",\"FT-RSDWOO\",\"FT-SRVAHT\",\"FT-SRVBDL\",\"FT-SRVBGS\",\"FT-SRVBIO\",\"FT-SRVCOA\",\"FT-SRVELC\",\"FT-SRVETH\",\"FT-SRVGAS\",\"FT-SRVH2G\",\"FT-SRVH2L\",\"FT-SRVHET\",\"FT-SRVLPG\",\"FT-SRVOIL\",\"FT-SRVSOL\",\"FT-SRVWIN\",\"FT-SUPBIO\",\"FT-SUPCOA\",\"FT-SUPELC\",\"FT-SUPNGA\",\"FT-SUPWAS\",\"FT-TRABDL\",\"FT-TRABJK\",\"FT-TRABNG\",\"FT-TRACNG\",\"FT-TRACYC\",\"FT-TRADST\",\"FT-TRAELC\",\"FT-TRAETH\",\"FT-TRAGSL\",\"FT-TRAH2\",\"FT-TRAKER\",\"FT-TRALNG\",\"FT-TRAWLK\"],\"scenario\":[\"reference_annual\",\"s1_450mt_annual\",\"s2_450mt_annual\",\"s3_450_annual\"],\"attribute\":[\"VAR_FIn\"],\"commodityset\":[\"SEAI_BIOENERGY\",\"SEAI_COAL\",\"SEAI_ELECTRICITY\",\"SEAI_HEAT\",\"SEAI_HYDROGEN\",\"SEAI_NATGAS\",\"SEAI_OIL\",\"SEAI_OTHER_RENEWABLES\",\"SEAI_PEAT\"]}",
+    "Name": "Final energy consumption by energy",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FIn\"],\"commodityset\":[\"SEAI_BIOENERGY\"]}",
+    "Name": "Total Bioenergy supplied (PJ)",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"CROLAND_Mgt\",\"GRALAND_Mgt\",\"ManagedForest_00\",\"WETLAND_Mgt\"],\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"CROLAND_use\",\"FOR_Managed\",\"GRALAND_use\",\"WTLND_Managed\"]}",
+    "Name": "Total land area (Mha)",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"process\":[\"CROPLAND_ENERGY\",\"FOR_Felled\",\"FOR_Thin\",\"GRALAND_ENERGY\"],\"attribute\":[\"VAR_FIn\"]}",
+    "Name": "Land use for bioenergy (Mha)",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodityset\":[\"SEAI_BIOENERGY\",\"SEAI_COAL\",\"SEAI_ELECTRICITY\",\"SEAI_HEAT\",\"SEAI_HYDROGEN\",\"SEAI_NATGAS\",\"SEAI_OIL\",\"SEAI_OTHER_RENEWABLES\",\"SEAI_PEAT\"]}",
+    "Name": "Energy consumption by feul (PJ)",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"commodityset\":[\"ENV-CO2_AGR\",\"ENV-CO2_IND\",\"ENV-CO2_PWR\",\"ENV-CO2_RSD\",\"ENV-CO2_SRV\",\"ENV-CO2_SUP\",\"ENV-CO2_TRA\"]}",
+    "Name": "Energy CO2 emissiions (kt)",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"TOTLULUCFS\"]}",
+    "Name": "Total LULUCF sink (kt) - HWP not included",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"HWP_Cstored\"]}",
+    "Name": "Annual HWP storage (kt C)",
+    "UserName": "ext04266"
+  },
+  {
+    "Settings": {},
+    "Description": "",
+    "EditedOn": "2026-06-08 16:11",
+    "LastAccessed": "2026-06-08 16:11",
+    "Filter": "{\"attribute\":[\"VAR_FOut\"],\"commodity\":[\"AGRCO2N\",\"EMI-CDW-NET\",\"EMI-CLB-GAIN\",\"EMI-CLB-LOSS\",\"EMI-CLI-NET\",\"EMI-CRO-DRAIN-CH4\",\"EMI-CRO-DRAIN-CO2\",\"EMI-CRO-DRAIN-N2O\",\"EMI-CSO-NET\",\"EMI-FDW-NET\",\"EMI-FLB-GAIN\",\"EMI-FLB-LOSS\",\"EMI-FLI-NET\",\"EMI-FOR-DRAIN-CH4\",\"EMI-FOR-DRAIN-CO2\",\"EMI-FOR-DRAIN-N2O\",\"EMI-FOR-NET\",\"EMI-FSO-NET\",\"EMI-GDW-NET\",\"EMI-GLB-GAIN\",\"EMI-GLB-LOSS\",\"EMI-GLI-NET\",\"EMI-GRA-DRAIN-CH4\",\"EMI-GRA-DRAIN-CO2\",\"EMI-GRA-DRAIN-N2O\",\"EMI-GRA-N2Oa\",\"EMI-GRA-N2Ob\",\"EMI-GSO-NET\",\"EMI-WDW-NET\",\"EMI-WET-DRAIN-CH4\",\"EMI-WET-DRAIN-CO2\",\"EMI-WET-DRAIN-N2O\",\"EMI-WLB-GAIN\",\"EMI-WLB-LOSS\",\"EMI-WLI-NET\",\"EMI-WSO-NET\",\"EMI_HWP_C\",\"HWP_Cstored\",\"INDCO2N\",\"INDCO2P\",\"PWRCO2N\",\"SRVCO2N\",\"TRACO2N\"]}",
+    "Name": "GHG emissions",
+    "UserName": "ext04266"
   }
 ]

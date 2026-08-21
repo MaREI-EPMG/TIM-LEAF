@@ -12,3 +12,6 @@ advind=0
 names yes
 solutiontype 2
 *feasopt 1
+*iis 1
+
+ 
