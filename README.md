@@ -25,7 +25,7 @@ Source code for FaIR v2.1.3  soft linked to TIM-LEAF is available [here](https:/
 The list of developers and funding is described in the [Acknowledgements](/ACKNOWLEDGEMENT.md) section. 
 
 # TIM-LEAF-FaIR integration
-All files associated with the TIM-LEAF-FaIR integration can be found in the [folder](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow).
+All files associated with the TIM-LEAF-FaIR integration can be found in this [folder](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow).
 
 ## Country-level emissions contribution in FaIR
 Compiling and running FaIR v 2.1.3 with a `modified fair.py` is documented [here](https://github.com/MaREI-EPMG/TIM-LEAF/blob/main/TIM-LEAF-FaIR_workflow/fair/fair_readme.md).
