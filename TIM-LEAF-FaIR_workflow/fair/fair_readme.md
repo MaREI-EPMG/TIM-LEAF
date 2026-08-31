@@ -147,6 +147,9 @@ YEAR is the year you are interested in assessing temperature change from. It can
 
 A file e.g. [NZ_ssp126_EB41990.xlsx](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow/fair/output) (sourced from the CCC in New Zealand) with some rudimentary graphs to demonstrate how the individual calculated columns can work to show total warming, or the warming from emissions since the historical reference year, i.e. 2020, or the contribution from emissions up to 2020 and from 2021. 
 
+## Acknowledgments
+We would like to thank the New Zealand Climate Change Commission for providing the modified version of the FaIR v2.1.3 source code and our thanks also to Chris Smith who made the original modifications to the FaIR v2.1.3 source code.
+
 ## References
 - Climate Change Commission. (2024a). Input data files for temperature modelling, New Zealand. 
 - Climate Change Commission. (2024b). Technical annex final report on the fourth emissions budget and 2050 target review.
