@@ -82,7 +82,7 @@ where $H$<sup>max</sup><sub>f,t</sub> is the maximum harvest,
 $\theta$<sub>f,t</sub> is the sustainable harvest rate, and 
 $S$<sub>for,t</sub> is the forest land area.
 
- Historical data for 2015–2023 are sourced from [Forest Statistics 2025](https://www.gov.ie/en/campaigns/a9d3c-forestry-in-ireland/) with harvest levels linearly extrapolated to 2070. This extrapolated pathway defines the High Harvest (HH) level and represents the upper bound of sustainable roundwood extraction used in TIM-LEAF. Two additional harvest variants are derived from this upper bound: Medium Harvest (MH) at 70% of HH and Low Harvest (LH) at 40% of HH.
+Historical data for 2015–2023 are sourced from [Forest Statistics 2025](https://www.gov.ie/en/campaigns/a9d3c-forestry-in-ireland/) with harvest levels linearly extrapolated to 2070. This extrapolated pathway defines the High Harvest (HH) level and represents the upper bound of sustainable roundwood extraction used in TIM-LEAF. Two additional harvest variants are derived from this upper bound: Medium Harvest (MH) at 70% of HH and Low Harvest (LH) at 40% of HH.
 
 #### Afforestation pathways
 TIM-LEAF introduces future endogenous afforestation pathways, allowing suitable non-forest land, including wetland and grassland, to be converted to managed forest.
@@ -136,7 +136,7 @@ The initial HWP stock is reconstructed using historical production data from 199
 
 #### HWP implementation in TIM-LEAF
 
- The HWP representation is decomposed into two components: (1) a process-flow representation of carbon inflow and (2) a storage-based representation of carbon decay.
+The HWP representation is decomposed into two components: (1) a process-flow representation of carbon inflow and (2) a storage-based representation of carbon decay.
 
 The process-flow component represents the transfer of carbon from harvested wood products into the HWP storage pool. A process-flow efficiency, $\eta_{\mathrm{inflow}}$, is used to represent the fraction of harvested carbon entering the storage pool:
 
@@ -163,7 +163,7 @@ This structure allows the HWP carbon stock to evolve over time in response to en
 In the model version, **instantaneous HWP carbon emissions associated with harvesting are endogenous** and are therefore included in the model's cumulative carbon-budget constraint. The subsequent annual change in HWP carbon stock is calculated **ex post** from the modelled HWP stock trajectory and is not an endogenous term in the carbon budget constraint.
 
 ###  Endogenous bioenergy supply
- Biomass availability from agriculture and forestry is connected directly to the energy system.
+Biomass availability from agriculture and forestry is connected directly to the energy system.
 Energy crops compete for available land, while forestry biomass is constrained by sustainable harvest potentials. The energy system determines bioenergy demand through the optimisation, while the AFOLU system determines the biomass that can be supplied subject to land, yield, harvest and conversion constraints.
 
 Bioenergy supply is  directly linked to land allocation and forest harvesting within the integrated optimisatio as follows:
@@ -227,8 +227,7 @@ The integrated TIM-LEAF–FaIR workflow consists of running TIM-LEAF, transferri
 The data-transfer pipeline provides the interface between TIM-LEAF and FaIR. TIM-LEAF produces detailed model output files in VEDA .vd format, while FaIR requires emissions data in a different structure. The [`data_transfer_from_TIM.py`](https://github.com/MaREI-EPMG/TIM-LEAF/blob/main/TIM-LEAF-FaIR_workflow/data_transfer_from_TIM.py) converts the relevant TIM-LEAF outputs into the emissions format required by the FaIR workflow.
 
 For the diagnostic scenarios included in this repository, `data_transfer_from_TIM.py` reads the TIM-LEAF output files for the BAU, S1, S2 and S3 scenarios. These files are provided in the [directory](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow/data/TIM-LEAF_scenarios) and are named as BAU.vd, S1.vd, S2.vd and S3.vd, respectively. The script reads the VEDA output files, selects the relevant emissions outputs and model years, maps TIM-LEAF emission commodities to the emissions categories required by FaIR, aggregates the results by year and scenario, and applies the required gas-specific unit conversions. It also processes land-use and land-use change CO₂ emissions and removals, calculates annual changes in harvested wood product carbon storage, and incorporates these changes into the land-use emissions balance.
-
-The processed TIM-LEAF emissions are then combined with the base emissions time series required by the FaIR workflow, [provided by the file](https://github.com/MaREI-EPMG/FAIR/blob/master/data/TIMLEAF_Emissions.csv). 
+ 
 The processed TIM-LEAF emissions are then combined with the base historical emissions time series required by the FaIR workflow, provided in [IRL_histWheatley2021_1750-2019](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow/data/historical) ([Wheatley 2021](https://doi.org/https://doi.org/10.5281/zenodo.7004406), [Wheatley 2023](https://doi.org/10.1080/14693062.2023.2191921)). 
 
 The resulting Ireland-specific emissions dataset contains the emissions components required by the FaIR workflow, including CO₂, CH₄, N₂O, HFCs, PFCs, SF₆, biogenic and land-use CO₂ (CO2B) and biogenic CH₄ (CH4B). The processed data are written to a scenario-specific CSV file, for example [IRL_histWheatley2021_S3.csv](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow/data/combined) when the S3 scenario is selected. 
