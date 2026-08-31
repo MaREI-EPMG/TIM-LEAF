@@ -160,7 +160,7 @@ $$
 
 This structure allows the HWP carbon stock to evolve over time in response to endogenous wood-product flows and the decay of previously stored carbon.
 
-In the model version, **instantaneous HWP carbon emissions associated with harvesting are endogenous** and are therefore included in the model's cumulative carbon-budget constraint. The subsequent annual change in HWP carbon stock is calculated **ex post** from the modelled HWP stock trajectory and is not currently included as an endogenous term in the optimisation constraint.
+In the model version, **instantaneous HWP carbon emissions associated with harvesting are endogenous** and are therefore included in the model's cumulative carbon-budget constraint. The subsequent annual change in HWP carbon stock is calculated **ex post** from the modelled HWP stock trajectory and is not currently included as an endogenous term in the carbon budget optimisation constraint.
 
 ###  Endogenous bioenergy supply
  Biomass availability from agriculture and forestry is connected directly to the energy system.
