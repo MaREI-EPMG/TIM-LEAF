@@ -5,8 +5,13 @@ FaIR v2.1.3 ([Leach et al., 2021](https://doi.org/10.5194/gmd-14-3007-2021); [Sm
 
 The approach of the Climate Change Commission (CCC) in New Zealand was replicated to assess the warming impact of national greenhouse gas emissions pathways ([Climate Change Commission, 2024b](https://www.climatecommission.govt.nz/assets/Advice-to-govt-docs/Target-and-budgets-final-reports/Technical-Annex-Final-reports-on-the-fourth-emissions-budget-and-2050-target-review-Dec-2024.pdf), [2024a](https://www.climatecommission.govt.nz/assets/Advice-to-govt-docs/Target-and-budgets-final-reports/Input-data-files-for-temperature-modelling-final-2050-target-advice.zip); [Smith, 2024b](https://doi.org/10.5281/zenodo.13142999); [Smith et al., 2021](https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07_SM.pdf)).
 
-This approach uses a modified locally compiled version of the fair v2.1.3 (`fair.py`) source code so that global baseline emissions scenarios can represent a country level contribution, in this case Ireland’s contribution ([Climate Change Commission, 2024b](https://www.climatecommission.govt.nz/assets/Advice-to-govt-docs/Target-and-budgets-final-reports/Technical-Annex-Final-reports-on-the-fourth-emissions-budget-and-2050-target-review-Dec-2024.pdf)). The modified `fair.py` has two additional functions  
-(i.e. def fill_scenarios_from_rcmip(self, RCMIPscenario) and def fill_scenario_from_rcmip(self, scenario,RCMIPscenario)), otherwise it is the same as the original.
+This approach uses a modified locally compiled version of the fair v2.1.3 (`fair.py`) source code so that global baseline emissions scenarios can represent a country level contribution, in this case Ireland’s contribution ([Climate Change Commission, 2024b](https://www.climatecommission.govt.nz/assets/Advice-to-govt-docs/Target-and-budgets-final-reports/Technical-Annex-Final-reports-on-the-fourth-emissions-budget-and-2050-target-review-Dec-2024.pdf)). The modified `fair.py` has two additional functions 
+
+def fill_scenarios_from_rcmip(self, RCMIPscenario) and 
+
+def fill_scenario_from_rcmip(self, scenario,RCMIPscenario) 
+
+otherwise it is the same as the original.
 
 The first function fills all scenarios that fair will run with the same global reduced complexity model intercomparison project (RCMIP) emissions scenario, in this case Shared Socioeconomic Pathway (SSP) 1-2.6 ([Nicholls et al., 2020](https://doi.org/10.5281/zenodo.4589756)).
 
@@ -46,6 +51,8 @@ added functions:
 
 ```python
 def fill_scenarios_from_rcmip(self, RCMIPscenario)
+```
+```python
 def fill_scenario_from_rcmip(self, scenario, RCMIPscenario)
 ```
 
@@ -132,7 +139,6 @@ comes a block of code where the calculations are done to define the fair scenari
 Now fair is run. 
 
 ## Outputs
-
 Outputs are written to a file, including various ways of expressing the warming from multiple gases, including the warming from emissions after the historical reference year. 
 
 Output appears in a .csv file with a name that is COUNTRY_GLOBALSCENARIO_COUNTRY-SCENARIO&YEAR.csv e.g. [IRL_ssp126_BAU2020.csv](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow/fair/output).
@@ -143,15 +149,10 @@ A file e.g. [NZ_ssp126_EB41990.xlsx](https://github.com/MaREI-EPMG/TIM-LEAF/tree
 
 ## References
 - Climate Change Commission. (2024a). Input data files for temperature modelling, New Zealand. 
-
 - Climate Change Commission. (2024b). Technical annex final report on the fourth emissions budget and 2050 target review.
-
 - Leach NJ, Jenkins S, Nicholls Z, Smith CJ, Lynch J, Cain M, Walsh T, Wu B, Tsutsui J & Allen MR (2021). FaIRv2.0.0: a generalized impulse response model for climate uncertainty and future scenario exploration. Geoscientific Model Development, 14(5), 3007–3036. https://doi.org/10.5194/gmd-14-3007-2021
-
 - Nicholls Z, Meinshausen M, Lewis J, Gieseke R, Dommenget D, Dorheim K, Fan C-S, Fuglestvedt JS, Gasser T, Golüke U, Goodwin P, Hartin C, Hope AP, Kriegler E, Leach NJ, Marchegiani D, McBride LA, Quilcaille Y, Rogelj J, Salawitch RJ, Samset BH, Sandstad M, Shiklomanov AN, Skeie RB, Smith CJ, Smith S, Tanaka K, Tsutsui J & Xie Z (2020). Reduced Complexity Model Intercomparison Project Phase 1: Introduction and evaluation of global-mean temperature response. Geoscientific Model Development, https://doi.org/10.5194/gmd-13-5175-2020
-
 - Nicholls Z & Lewis J (2021). Reduced Complexity Model Intercomparison Project (RCMIP) protocol (Version v5.1.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.4589756
-
 - Smith C (2023). FaIR Version 2.1.3. https://doi.org/https://github.com/OMS-NetZero/FAIR/releases 
 - Smith C (2024a). FaIR calibration data. https://doi.org/https://doi.org/10.5281/zenodo.10566813 
 - Smith C (2024b). FaIR calibration data (1.4.2) [Dataset]. Zenodo. https://doi.org/https://doi.org/10.5281/zenodo.13142999 
