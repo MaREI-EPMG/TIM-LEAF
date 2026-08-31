@@ -136,12 +136,11 @@ The initial HWP stock is reconstructed using historical production data from 199
 
 #### HWP implementation in TIM-LEAF
 
- The HWP representation is decomposed into two components: (1) a process-flow representation of carbon inflow and (2) a storage-based representation of carbon decay, as illustrated in Figure 4.
+ The HWP representation is decomposed into two components: (1) a process-flow representation of carbon inflow and (2) a storage-based representation of carbon decay.
 
 The process-flow component represents the transfer of carbon from harvested wood products into the HWP storage pool. A process-flow efficiency is used to represent the fraction of harvested carbon entering the storage pool:
 $$
-\frac{1-e^{-k_{\mathrm{eff}}}}
-{k_{\mathrm{eff}}}
+\frac{1-e^{-k_{\mathrm{eff}}}}{k_{\mathrm{eff}}}
 $$
 
 The remaining carbon is represented as instantaneous HWP carbon emissions, while the stored fraction is transferred to the HWP carbon pool.
