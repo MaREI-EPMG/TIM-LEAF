@@ -174,7 +174,7 @@ $$
 
 where $ACT^{\mathrm{bio}}_{t}$ is the endogenous bioenergy consumption determined by the energy-system optimisation, $Y_{a,t}$ is the biomass yield per hectare of energy crop $a$, $L_{\mathrm{energy},m,t}$ is the land allocated to energy crops on land type $m$, $\eta^{\mathrm{conv}}$ is the biomass-to-energy conversion efficiency and $H^{\max}_{f,t}$ is the maximum sustainable forest harvest.
 
-### 6. Integrated GHG accounting
+### Integrated GHG accounting
 With its unified structure, TIM-LEAF endogenously accounts for: 
 - CO₂ emissions from energy use and industrial processes
 - CH₄ and N₂O emissions from agricultural activities
