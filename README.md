@@ -18,12 +18,12 @@ TIM-LEAF is soft-linked to FaIR v2.1.3 ([Leach et al., 2021](https://gmd.coperni
 ## TIM-LEAF development
 The main model devlopments are: 
 
-- updated agricultural mitigation options based on Teagasc marginal abatement cost (MAC) curves;
+- updated agricultural mitigation options based on Teagasc marginal abatement cost (MAC) curves
 - a national land-use system representing seven aggregated land categories
 - a new forestry system representing forest land, forest biomass harvesting and future afforestation pathways 
 - forest carbon sequestration and saturation dynamics
 - harvested wood product (HWP) carbon storage
-- endogenous bioenergy supply linked to agricultural land and forestry biomass;
+- endogenous bioenergy supply linked to agricultural land and forestry biomass
 - integrated GHG accounting across energy, agriculture and LULUCF
 
 ## Model architecture
@@ -218,7 +218,7 @@ The resulting emissions pathways is then passed to the TIM-LEAF-FaIR workflow, w
 All files associated with the TIM-LEAF-FaIR integration can be found in this [folder](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow).
 
 ### Country-level emissions contribution in FaIR
-Compiling and running FaIR v 2.1.3 with a `modified fair.py` is documented [here](https://github.com/MaREI-EPMG/TIM-LEAF/blob/main/TIM-LEAF-FaIR_workflow/fair/fair_readme.md).
+Compiling and running FaIR v 2.1.3 with a modified `fair.py` is documented [here](https://github.com/MaREI-EPMG/TIM-LEAF/blob/main/TIM-LEAF-FaIR_workflow/fair/fair_readme.md).
 
 ### Running the TIM-LEAF–FaIR workflow
 The integrated TIM-LEAF–FaIR workflow consists of running TIM-LEAF, transferring and processing the resulting emissions data and running the FaIR model. The workflow requires [TIM-LEAF model outputs](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow/data/TIM-LEAF_scenarios), the TIM-LEAF–FaIR data transfer script [`data_transfer_from_TIM.py`](https://github.com/MaREI-EPMG/TIM-LEAF/blob/main/TIM-LEAF-FaIR_workflow/data_transfer_from_TIM.py), the FaIR script [`countrylevel_IRL.py`](https://github.com/MaREI-EPMG/TIM-LEAF/blob/main/TIM-LEAF-FaIR_workflow/fair/countrylevel_IRL.py) and the required Python dependencies.
