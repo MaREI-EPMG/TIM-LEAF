@@ -1,4 +1,5 @@
-# Origins and purpose
+# Installing and using fair with TIM-LEAF
+## Origins and purpose
 
 FaIR v2.1.3 ([Leach et al., 2021](https://doi.org/10.5194/gmd-14-3007-2021); [Smith, 2023](https://github.com/OMS-NetZero/FAIR/releases), [2024a](https://doi.org/10.5281/zenodo.10566813)) has been incorporated as a module in the TIM-LEAF framework.
 
@@ -13,7 +14,7 @@ The second function fills a specified fair scenario with a given emissions scena
 
 This allows (1) the warming that would have happened without Ireland’s emissions and (2) the difference between the global baseline and the global baseline without Ireland’s emissions, which can be interpreted as the warming caused by Ireland’s emissions’, to be calculated ([Climate Change Commission, 2024b](https://www.climatecommission.govt.nz/assets/Advice-to-govt-docs/Target-and-budgets-final-reports/Technical-Annex-Final-reports-on-the-fourth-emissions-budget-and-2050-target-review-Dec-2024.pdf)).
 
-# Instructions to compile fair with a modified fair.py file
+## Instructions to compile fair with a modified fair.py file
 
 Needs *python* and *pip* installed.
 
@@ -50,7 +51,7 @@ def fill_scenario_from_rcmip(self, scenario, RCMIPscenario)
 
 The first function fills all scenarios that fair will run with the same global RCMIP emissions scenario. The second function fills a specified fair scenario with a given RCMIP emissions scenario.
 
-# Instructions to run fair for country-level GHG emissions pathways
+## Instructions to run fair for country-level GHG emissions pathways
 
 The Python script [`countrylevel_IRL.py`](https://github.com/MaREI-EPMG/TIM-LEAF/blob/main/TIM-LEAF-FaIR_workflow/fair/countrylevel_IRL.py) used to run this analysis for Ireland, is based on a [Jupyter Notebook script](https://www.climatecommission.govt.nz/assets/Advice-to-govt-docs/Target-and-budgets-final-reports/Input-data-files-for-temperature-modelling-final-2050-target-advice.zip) from the CCC ([Climate Change Commission, 2024a](https://www.climatecommission.govt.nz/assets/Advice-to-govt-docs/Target-and-budgets-final-reports/Input-data-files-for-temperature-modelling-final-2050-target-advice.zip), [2024b](https://www.climatecommission.govt.nz/assets/Advice-to-govt-docs/Target-and-budgets-final-reports/Technical-Annex-Final-reports-on-the-fourth-emissions-budget-and-2050-target-review-Dec-2024.pdf)). 
 
@@ -78,10 +79,10 @@ To add new scenarios, the new scenario data must be provided in the same format 
 exchange_data(IRL_scenarios, IRL_scenarios_file)
 ```
 
-# Inputs
-Input files can be found [here](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow/fair/input).
+## Inputs
+Input files for calibration and global emissions can be found [here](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow/fair/input).
 
-# Calibration
+### Calibration
 It is important to use the same input files for climate calibration and species properties calibration
 -	file v1.4.2; calibrated_constrained_parameters-v1.4.2.csv ([Smith 2024a](https://doi.org/https://doi.org/10.5281/zenodo.10566813 ), [2024b](https://doi.org/https://doi.org/10.5281/zenodo.13142999 ))
 -	file v1.2.0; species_configs_properties_calibration1.2.0.csv ([Smith 2024a](https://doi.org/https://doi.org/10.5281/zenodo.10566813 ), [2024b](https://doi.org/https://doi.org/10.5281/zenodo.13142999 ))
@@ -92,18 +93,18 @@ Use
 -	solar_erf_timebounds.csv  ([Smith 2024a](https://doi.org/https://doi.org/10.5281/zenodo.10566813 ), [2024b](https://doi.org/https://doi.org/10.5281/zenodo.13142999 ))
 -	volcanic_ERF_1750-2101_timebounds.csv ([Smith 2024a](https://doi.org/https://doi.org/10.5281/zenodo.10566813 ), [2024b](https://doi.org/https://doi.org/10.5281/zenodo.13142999 ))
 
-# Global emissions files
+### Global emissions files
 Use
 -	rcmip-concentrations-annual-means-v5-1-0.csv ([Nicholls & Lewis 2021](https://doi.org/10.5281/zenodo.4589756))
 -	rcmip-emissions-annual-means-v5-1-0.csv ([Nicholls & Lewis 2021](https://doi.org/10.5281/zenodo.4589756))
 -	rcmip-radiative-forcing-annual-means-v5-1-0.csv ([Nicholls & Lewis 2021](https://doi.org/10.5281/zenodo.4589756))
 
-# Country-level GHG emissions pathways
+### Country-level GHG emissions pathways
 A file of [combined historical and TIM-LEAF scenarios data](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow/data/combined) e.g.  IRL_histWheatley2021_S3.csv is an emissions input file for Ireland (1750 to 2070). Created as detailed [here](https://github.com/MaREI-EPMG/TIM-LEAF/blob/main/README.md).
 
 The scenario can have any name but it must match the scenario name provided in the python script. Data are expected annually from (1750 or) 1850 to 2299. 
 
-# Key steps
+## Key steps
 The python countrylevel_IRL.py script has various comments that explain the key steps. 
 
 Key steps are to define the global emissions scenario (this is important as the radiative efficacy of a country’s emissions depends on global background concentrations), the name of the specific country-level emissions scenario you want to run (e.g. ‘BAU'), and a historical reference year (e.g. 1990 or 2026). 
@@ -130,7 +131,7 @@ comes a block of code where the calculations are done to define the fair scenari
 
 Now fair is run. 
 
-# Outputs
+## Outputs
 
 Outputs are written to a file, including various ways of expressing the warming from multiple gases, including the warming from emissions after the historical reference year. 
 
@@ -140,7 +141,7 @@ YEAR is the year you are interested in assessing temperature change from. It can
 
 A file e.g. [NZ_ssp126_EB41990.xlsx](https://github.com/MaREI-EPMG/TIM-LEAF/tree/main/TIM-LEAF-FaIR_workflow/fair/output) (sourced from the CCC in New Zealand) with some rudimentary graphs to demonstrate how the individual calculated columns can work to show total warming, or the warming from emissions since the historical reference year, i.e. 2020, or the contribution from emissions up to 2020 and from 2021. 
 
-# References
+## References
 - Climate Change Commission. (2024a). Input data files for temperature modelling, New Zealand. 
 
 - Climate Change Commission. (2024b). Technical annex final report on the fourth emissions budget and 2050 target review.
