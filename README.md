@@ -8,7 +8,7 @@
 ## Purpose of the model
 TIM-LEAF is a national integrated model of Ireland's land, energy, agriculture and forestry systems. The model extends the [TIMES-Ireland Model (TIM)](https://github.com/MaREI-EPMG/times-ireland-model) to represent interactions between energy-system transformation, land availability, agricultural production, forestry, bioenergy, carbon stocks and greenhouse gas emissions within a single modelling framework.
 
-The underlying TIM represents the Irish energy system, including energy supply, conversion technologies, transmission infrastructure and end-use sectors. TIM-LEAF extends this framework by making key processes in the agriculture, land-use and forestry systems endogenous to the optimisation.Agricultural mitigation, afforestation, bioenergy and carbon dioxide removal technologies can be evaluated alongside energy-system transformation rather rather than in silos. 
+The underlying TIM represents the Irish energy system, including energy supply, conversion technologies, transmission infrastructure and end-use sectors. TIM-LEAF extends this framework by making key processes in the agriculture, land-use and forestry systems endogenous to the optimisation. Agricultural mitigation, afforestation, bioenergy and carbon dioxide removal technologies can be evaluated alongside energy-system transformation rather than in silos. 
 
 TIM-LEAF can be run under alternative scenario assumptions, including business-as-usual conditions and cumulative carbon-budget constraints. The model identifies the least-cost system configuration satisfying the specified scenario constraints.
 
@@ -49,18 +49,13 @@ Agricultural land requirements are determined from exogenously specified crop an
 Land-use transitions are constrained by physical land availability and allowable conversion pathways:
 
 $$
-S_{m,t+1}
-=
-S_{m,t}
-+
-\sum_{n \neq m} \mathrm{CONV}_{n \rightarrow m,t}
--
-\sum_{n \neq m} \mathrm{CONV}_{m \rightarrow n,t}
+S_{m,t+1} = S_{m,t} + \sum_{n \neq m} \mathrm{CONV}_{n \rightarrow m,t} - \sum_{n \neq m} \mathrm{CONV}_{m \rightarrow n,t}
 $$
+
 This formulation conserves total land area while allowing transitions between land categories over time.
 
 ###  Energy system 
-The energy system in TIM-LEAF builds on the optimisation framework developed by (Balyk et al., 2022), representing the full energy system, including primary energy supply, conversion technologies, transmission infrastructure, and end-use sectors. Detailed formulation and sectoral assumptions are described in (Balyk et al., 2022).
+The energy system in TIM-LEAF builds on the optimisation framework developed by [(Balyk et al., 2022)](https://doi.org/10.5194/gmd-15-4991-2022), representing the full energy system, including primary energy supply, conversion technologies, transmission infrastructure, and end-use sectors. Detailed formulation and sectoral assumptions are described in [(Balyk et al., 2022)](https://doi.org/10.5194/gmd-15-4991-2022).
 
 ### Agriculture system 
 The existing Agri-TIMES representation was extended and updated to incorporate agricultural mitigation options based on marginal abatement cost (MAC) curves developed by [Teagasc (2023)](https://teagasc.ie/environment/climate-centre/publications/reports/marginal-abatement-cost-curve-2023/). The model includes mitigation options across different levels of technology readiness, including: low-emission slurry spreading (LESS), clover inclusion, manure storage covers, manure acidification, anerobic digestion and menthane inhibitors. 
@@ -105,13 +100,7 @@ where $a$ is stand age in years, $k$ is a scaling constant controlling the maxim
 For simplicity, $p$ is assumed to be 1 in TIM-LEAF. The resulting age-dependent sequestration function is:
 
 $$
-S(a)
-=
-S_{\max}
-\left(
-\frac{a}{a_{\mathrm{peak}}}
-\right)
-e^{\left(1-\frac{a}{a_{\mathrm{peak}}}\right)}
+S(a) = S_{\max} \left(\frac{a}{a_{\mathrm{peak}}}\right) e^{\left(1-\frac{a}{a_{\mathrm{peak}}}\right)}
 $$
 
 
@@ -120,13 +109,7 @@ HWP carbon storage is modelled using a first-order decay (FOD) formulation, foll
 For computational efficiency, sawn wood and wood-based panels are combined into a single `Wood_Products` pool using a weighted effective decay constant:
 
 $$
-k_{\mathrm{eff}}
-=
-\frac{
-\displaystyle\sum_l k_l\,\overline{\mathrm{Inflow}}_l
-}{
-\displaystyle\sum_l \overline{\mathrm{Inflow}}_l
-}
+k_{\mathrm{eff}} = \frac{\sum_l k_l\,\overline{\mathrm{Inflow}}_l}{\sum_l \overline{\mathrm{Inflow}}_l}
 $$
 
 where $k_l$ is the decay constant for product category $l$, and $\overline{\mathrm{Inflow}}_l$ is the average annual HWP inflow over 1990–1994 for that product category, expressed in tonnes of carbon (tC).
@@ -134,35 +117,19 @@ where $k_l$ is the decay constant for product category $l$, and $\overline{\math
 The aggregated FOD formulation becomes:
 
 $$
-C_{\mathrm{total}}(t+1)
-=
-C_{\mathrm{total}}(t)e^{-k_{\mathrm{eff}}}
-+
-\frac{\mathrm{Inflow}_{\mathrm{total}}(t)}
-{k_{\mathrm{eff}}}
-\left(
-1-e^{-k_{\mathrm{eff}}}
-\right)
+C_{\mathrm{total}}(t+1) = C_{\mathrm{total}}(t)e^{-k_{\mathrm{eff}}} + \frac{\mathrm{Inflow}_{\mathrm{total}}(t)}{k_{\mathrm{eff}}}\left(1-e^{-k_{\mathrm{eff}}}\right)
 $$
 
 The annual change in the HWP carbon stock is:
 
 $$
-\Delta C_{\mathrm{total}}(t)
-=
-C_{\mathrm{total}}(t+1)
--
-C_{\mathrm{total}}(t)
+\Delta C_{\mathrm{total}}(t) = C_{\mathrm{total}}(t+1) - C_{\mathrm{total}}(t)
 $$
 
 where:
 
 $$
-\mathrm{Inflow}_{\mathrm{total}}(t)
-=
-\mathrm{Inflow}_{\mathrm{sawn\ wood}}(t)
-+
-\mathrm{Inflow}_{\mathrm{wood\ based\ panels}}(t)
+\mathrm{Inflow}_{\mathrm{total}}(t) = \mathrm{Inflow}_{\text{sawn wood}}(t) + \mathrm{Inflow}_{\text{wood-based panels}}(t)
 $$
 
 The initial HWP stock is reconstructed using historical production data from 1990 to 2017.
@@ -202,17 +169,7 @@ Energy crops compete for available land, while forestry biomass is constrained b
 Bioenergy supply is  directly linked to land allocation and forest harvesting within the integrated optimisatio as follows:
 
 $$
-ACT^{\mathrm{bio}}_t
-\leq
-\eta^{\mathrm{conv}}
-\left(
-\sum_{a \in A_{\mathrm{energy}}}
-\sum_{m \in M}
-Y_{a,t}\,L_{\mathrm{energy},m,t}
-+
-\sum_{f \in F}
-H^{\max}_{f,t}
-\right)
+ACT^{\mathrm{bio}}_t \leq \eta^{\mathrm{conv}} \left(\sum_{a \in A_{\mathrm{energy}}} \sum_{m \in M} Y_{a,t}\,L_{\mathrm{energy},m,t} + \sum_{f \in F} H^{\max}_{f,t}\right)
 $$
 
 where $ACT^{\mathrm{bio}}_{t}$ is the endogenous bioenergy consumption determined by the energy-system optimisation, $Y_{a,t}$ is the biomass yield per hectare of energy crop $a$, $L_{\mathrm{energy},m,t}$ is the land allocated to energy crops on land type $m$, $\eta^{\mathrm{conv}}$ is the biomass-to-energy conversion efficiency and $H^{\max}_{f,t}$ is the maximum sustainable forest harvest.
@@ -231,19 +188,8 @@ For each scenario, TIM-LEAF identifies the least-cost combination of energy-syst
 
 For scenarios subject to a cumulative carbon budget, the cumulative emissions are given as: 
 
-
 $$
-\mathrm{Cumulative\ emissions}
-=
-E^{\mathrm{energy}}_t
-+
-E^{\mathrm{AFOLU}}_t
--
-\Delta C^{\mathrm{Land}}_t
-+
-HWP^{\mathrm{Instant}}_t
--
-CDR_t
+Net_t = E^{\mathrm{energy}}_t + E^{\mathrm{AFOLU}}_t - \Delta C^{\mathrm{Land}}_t + HWP^{\mathrm{Instant}}_t - CDR_t
 $$
 
 where $E^{\mathrm{energy}}_t$ represents CO₂ emissions from fossil-fuel combustion and industrial processes in the energy system, $E^{\mathrm{AFOLU}}_t$ represents CO₂, CH₄ and N₂O emissions from agricultural and land-use activities, $\Delta C^{\mathrm{Land}}_t$ represents changes in land and forest carbon stocks, $HWP^{\mathrm{Instant}}_t$ represents instantaneous carbon emissions from harvested wood products at harvest, and $CDR_t$ represents CO₂ removal from carbon dioxide removal technologies such as CCS and DACCS.
