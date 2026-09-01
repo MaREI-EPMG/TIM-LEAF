@@ -250,7 +250,7 @@ The scenarios included in the repository are initial diagnostic scenarios develo
 - S2 – A balanced pathway with reduced biomass availability relative to S1 and mitigation is distributed across afforestation and RE expansion
 - S3 - A structural transformation pathway in which reduced agricultural demand and methane mitigation reduce pressure on land resources, allowing large scale afforestation and ecosystem restoration. 
 
-Zenodo [repository of scenarios](https://doi.org/10.5281/zenodo.5517363)
+[Zenodo repository](https://doi.org/10.5281/zenodo.22210894)
 
 ## Visualisation 
 - [Web app](https://epmg-dash-new-look-w0b6.onrender.com/dashboard?study_id=18&tab=charts&scenario_id=90&sector=SYS&subsector=Total+Primary+Energy+Demand) visualising results from TIM-LEAF scenarios. Users can create their own visualisations by exporting the relevant TIM-LEAF results from the dashboard. 
