@@ -3,7 +3,7 @@
 
 # TIMES-Ireland Model for land, energy, agriculture and forestry systems (TIM-LEAF v1.0)
 
-[![DOI](https://zenodo.org/badge/429173600.svg)](https://zenodo.org/badge/latestdoi/429173600)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22210894.svg)](https://doi.org/10.5281/zenodo.22210894)
 
 ## Purpose of the model
 TIM-LEAF is a national integrated model of Ireland's land, energy, agriculture and forestry systems. The model extends the [TIMES-Ireland Model (TIM)](https://github.com/MaREI-EPMG/times-ireland-model) to represent interactions between energy-system transformation, land availability, agricultural production, forestry, bioenergy, carbon stocks and greenhouse gas emissions within a single modelling framework.
